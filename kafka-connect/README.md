@@ -3,14 +3,17 @@ Just some notes on setting up kafka connect
 
 ### Step 1: clone down this repository
 
+
+
 ### Step 2: Find the connectors you want to include on the Confluent website
+https://docs.confluent.io/current/connect/managing/connectors.html
 
 ### Step 3: Download the connector JAR files
 Example: download the mysql zip and extract the jar file (select platform independent)
 https://dev.mysql.com/downloads/connector/j/ 
 
 ### Step 4: Copy the jar file into the "connectors" folder
-Any jar files here will be copied into the Dockerfile when built.
+Put your connectors here, and modify the dockerfile to copy the files where they should go inside of conenct when the dockerfile is built.  Example shown in the Dockerfile is for mysql, which is jdbc based.
 
 ### Step 5: Build and push the dockerfile
 ```
