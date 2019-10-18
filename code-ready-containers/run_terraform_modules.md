@@ -22,7 +22,7 @@ Step 6 - From inside the terminal/container, log into the openshift cluster via 
 ```
 oc login --insecure-skip-tls-verify=true -u kubeadmin -p <your-password> https://api.crc.testing:6443
 ```
-NOTE: replace "<your-password>" with the password displayed when the "crc start" command command completed.
+NOTE: replace "\<your-password\>" with the password displayed when the "crc start" command command completed.
 
 Step 7 - make a dummy credentials.properties file
 ```
