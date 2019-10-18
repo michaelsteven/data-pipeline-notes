@@ -13,7 +13,7 @@ These instructions draw from these urls:
     ```
     /usr/local/bin
     ```
-3. At the URL, click the link to Download your pull secret, you will need that when starting up.
+3. At the URL, click the link to Download your pull secret.  You will be prompted for this later during the CRC Start process.
 
 ## Startup
 1. Run the following command from a termanl session:
