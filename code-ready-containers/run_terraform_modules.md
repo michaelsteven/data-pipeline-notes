@@ -18,7 +18,7 @@ Step 4 - Rename these files to .BAK so they don’t execute
 - stage3-logdna.tf
 - stage3-sysdig.bak
 
-Step 5 - Open a terminal window and navigate into the iteration-zero-ibmcloud directory
+Step 5 - Open a new terminal window (different than the one used to start CRC) and navigate into the iteration-zero-ibmcloud directory
 
 Step 6 - Run the launch.sh script that will create start a docker container and exec in as a bash session in the terminal window
 ```
