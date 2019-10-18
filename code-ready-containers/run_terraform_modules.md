@@ -36,7 +36,7 @@ Step 8 - Run the runTerraform.sh scripts as normal
 
 Step 9 - When prompted for the cluster type, enter "o" for openshift
 
-Step 10 - when prompted for variable input, put in dummy data
+Step 10 - When prompted to proceed, enter "y"
 
 ## Cleaning Up
 Step 1. - In the terminal where the CRC was started, delete the CRC VM instance and start it up again
