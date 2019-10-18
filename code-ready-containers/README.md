@@ -4,44 +4,32 @@ These instructions draw from these urls:
 - https://code-ready.github.io/crc/
 
 ## Installation for MAC
-1. Download the file "crc-macos-amd64.tar.xz" from:
+1. Go to this URL and follow the instructions
    ```
-   https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/
+   https://cloud.redhat.com/openshift/install/crc/installer-provisioned
    ```
 
-2. Untar the file and copy the crc binary to the following path:
+2. Untar the file from the download link for your operating system and copy the crc binary to the following path:
     ```
     /usr/local/bin
     ```
-3. Run the following command from a termanl session:
+3. Download the pull secret, you will need that when starting up.
+
+## Startup
+1. Run the following command from a termanl session:
     ```
     crc setup
     ```
-4. During the installation process you will be prompted for your redhat secret.  Go to the link presented, copy and paste in your secret to the terminal window.
-
-
-## Startup
-1. Run the crc start command in a terminal window
+2. By default it is set to only use 8GB ram; git it 10 or more:
+    ```
+    crc config set memory 10240
+    ```
+3. Run the crc start command in a terminal window
     ```
     crc start
     ```
-2. Open a browser and go the the following url
-    ```
-    https://console-openshift-console.apps-crc.testing/
-    ```
-3. To use the command line, run these commands: 
-    ```
-    crc oc-env
-    ```
-    ```
-    eval $(crc oc-env)
-    ```
-    ```
-    oc login -u kubeadmin -p <<password>> https://api.crc.testing:6443
-4. Verify your connected to the right server
-    ```
-    oc cluster-info
-    ```
+4. During the installation process you will be prompted for your pull secret.  Copy and Paste it into the terminal window.
+
 ## Reset
 ```
 crc delete
