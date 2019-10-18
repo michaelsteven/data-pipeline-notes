@@ -13,7 +13,7 @@ These instructions draw from these urls:
     ```
     /usr/local/bin
     ```
-3. Download the pull secret, you will need that when starting up.
+3. At the URL, click the link to Download your pull secret, you will need that when starting up.
 
 ## Startup
 1. Run the following command from a termanl session:
