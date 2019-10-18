@@ -1,7 +1,7 @@
 # Code Ready Containers
 These instructions draw from these urls:
-https://github.com/code-ready/crc
-https://code-ready.github.io/crc/
+- https://github.com/code-ready/crc
+- https://code-ready.github.io/crc/
 
 ## Installation for MAC
 1. Download the file "crc-macos-amd64.tar.xz" from:
