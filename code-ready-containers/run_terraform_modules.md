@@ -24,14 +24,19 @@ oc login --insecure-skip-tls-verify=true -u kubeadmin -p <<your-password>> https
 ```
 NOTE: replace "<<your-password>>" with the password displayed when the "crc start" command command completed.
 
-Step 7 - Run the runTerraform.sh scripts as normal
+Step 7 - make a dummy credentials.properties file
+```
+cp credentials.template credentials.properties
+```
+
+Step 8 - Run the runTerraform.sh scripts as normal
 ```
 ./runTerraform.sh
 ```
 
-Step 8 - When prompted for the cluster type, enter openshift
+Step 9 - When prompted for the cluster type, enter openshift
 
-Step 9 - when prompted for variable input, put in dummy data
+Step 10 - when prompted for variable input, put in dummy data
 
 ## Cleaning Up
 Step 1. - In the terminal where the CRC was started, delete the CRC VM instance and start it up again
