@@ -30,6 +30,17 @@ These instructions draw from these urls:
     ```
 4. During the installation process you will be prompted for your pull secret.  Copy and Paste it into the terminal window.
 
+6.  Wait about 5 minutes for the VM initialization to complete.  When complete, the kubeadmin password will be displayed.  Make note of this password becasue you will need it to log into the console.
+
+5. Open a web browser and go to the openshift console
+     ```
+     http://console-openshift-console.apps-crc.testing
+     ```
+
+6. Click the Log in with kube.admin link.  
+- for the Username, use kubeadmin.  
+- for the password, use the password guid displayed in the terminal window when the CRC start command completed. 
+
 ## Reset
 ```
 crc delete
