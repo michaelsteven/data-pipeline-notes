@@ -20,9 +20,9 @@ Step 5 - Run the launch.sh script that will create start a docker container and 
 
 Step 6 - From inside the terminal/container, log into the openshift cluster via the cli.
 ```
-oc login --insecure-skip-tls-verify=true -u kubeadmin -p <<your-password>> https://api.crc.testing:6443
+oc login --insecure-skip-tls-verify=true -u kubeadmin -p <your-password> https://api.crc.testing:6443
 ```
-NOTE: replace "<<your-password>>" with the password displayed when the "crc start" command command completed.
+NOTE: replace "<your-password>" with the password displayed when the "crc start" command command completed.
 
 Step 7 - make a dummy credentials.properties file
 ```
@@ -34,7 +34,7 @@ Step 8 - Run the runTerraform.sh scripts as normal
 ./runTerraform.sh
 ```
 
-Step 9 - When prompted for the cluster type, enter openshift
+Step 9 - When prompted for the cluster type, enter "o" for openshift
 
 Step 10 - when prompted for variable input, put in dummy data
 
