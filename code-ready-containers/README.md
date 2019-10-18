@@ -38,8 +38,8 @@ These instructions draw from these urls:
      ```
 
 6. Click the Log in with kube.admin link.  
-- for the Username, use kubeadmin.  
-- for the password, use the password guid displayed in the terminal window when the CRC start command completed. 
+    - for the Username, use kubeadmin.  
+    - for the password, use the password guid displayed in the terminal window when the CRC start command completed. 
 
 ## Reset
 ```
