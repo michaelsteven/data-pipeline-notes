@@ -38,11 +38,11 @@ Step 8 - Run the runTerraform.sh scripts as normal
 Step 9 - when prompted for variable input, put in dummy data
 
 ## Cleaning Up
-Step 1. In the terminal where the CRC was started, delete the CRC VM instance and start it up again
+Step 1. - In the terminal where the CRC was started, delete the CRC VM instance and start it up again
     ```
     crc delete
     ```
-Step 2. In the tools container terminal, delete the terraform workspace folder
+Step 2. - In the tools container terminal, delete the terraform workspace folder
     ```
     rm -rf workspace/
     ```
