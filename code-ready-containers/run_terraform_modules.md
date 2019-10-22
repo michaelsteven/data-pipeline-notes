@@ -49,3 +49,10 @@ Step 2. - In the tools container terminal, delete the terraform workspace folder
 rm -rf workspace/
 ```
     
+## Known Issues
+- When deploying, sometimes Jenkins will exceed its installation timeout and shut down.
+- None of the services have TLS secrets configured.
+- The ArgoCD service has a tls secret configured, and something about it is keeping the route from automatically being created
+
+## Development Notes
+- If there is a tls secret problem, the route in openshift won't be automatically generated.
