@@ -3,6 +3,9 @@ These instructions draw from these urls:
 - https://github.com/code-ready/crc
 - https://code-ready.github.io/crc/
 
+## Introduction
+CodeReady Containters will start a single node Openshift 4 virtual machine on your workstation. In its current state, the certificates are set to expire 30 days from the date the VM was packaged by the CRC team prior to download. There currently isn't a process for regenerating the certificates, meaning that the old version will need to be deleted and new version of the CRC downloaded and started.  All previously deployed applications on the node will be lost and need to be redeployed.
+
 ## Installation for MAC
 1. Go to this URL and follow the instructions
    ```
@@ -20,7 +23,7 @@ These instructions draw from these urls:
     ```
     crc setup
     ```
-2. By default it is set to only use 8GB ram; git it 10 or more:
+2. By default it is set to only use 8GB ram. The more ram you can give it, the better. Here we are setting it to 10Gb:
     ```
     crc config set memory 10240
     ```
